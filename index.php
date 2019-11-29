@@ -1,6 +1,14 @@
 <?php
 if (session_id()=='') session_start();
 
+/*
+# configuração no arquivo .htaccess
+
+RewriteRule ^_([a-z,0-9,A-Z,_-]*)$ index.php?gets_geral=$1
+RewriteRule ^lead([a-z,0-9,A-Z,_-]*)$ index.php?gets_geral=$1
+
+*/
+
 //  https://contato.ws/[usuario]
 //                          |
 //    copie o nome de       |
