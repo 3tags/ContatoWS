@@ -1,12 +1,13 @@
 <?php
 if (session_id()=='') session_start();
 
-//  https://contato.ws/[vegetais]
+//  https://contato.ws/[usuario]
 //                          |
-//                          |
+//    copie o nome de       |
+//    usuário e colque aqui |
 //                          |
 //                          ▼ 
-$_usuario_contatows_ = "vegetais"; 
+$_usuario_contatows_ = "usuario"; 
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
     if ( is_object( $arrays ) ) {
